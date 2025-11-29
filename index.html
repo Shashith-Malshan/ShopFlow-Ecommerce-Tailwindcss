@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopFlow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-    <nav>
 
+<body>
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary">ShopFlow</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary transition">Products</a>
+                    <a href="#categories" class="text-gray-700 hover:text-primary transition">Categories</a>
+                    <a href="#cart" class="text-gray-700 hover:text-primary transition">Cart (<span
+                            id="cart-count">0</span>)</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="user-menu" class="text-gray-700 hover:text-primary">
+                        <i class="fas fa-user-circle text-2xl"></i>
+                    </button>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <section>
@@ -32,7 +55,7 @@
     </section>
 
     <footer>
-        
+
     </footer>
 
 
@@ -42,7 +65,8 @@
 
 
 
-    
-<script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
